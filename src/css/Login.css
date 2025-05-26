@@ -1,0 +1,122 @@
+/* Titre principal – en dehors de la boîte */
+.login-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Conteneur centré */
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Sous-titre */
+.login-subtitle {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+/* "Connexion" */
+.login-heading {
+  font-size: 1.3rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* Formulaire */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ Centrage horizontal */
+  gap: 15px;
+}
+
+/* Champs */
+.form-input {
+  width: 100%;
+  max-width: 300px; /* ✅ Largeur contrôlée */
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+}
+
+/* Bouton */
+.submit-button {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Messages */
+.message {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  max-width: 300px;
+}
+
+.message.error {
+  color: #e74c3c;
+}
+
+.message.success {
+  color: #2ecc71;
+}
+
+/* Liens */
+.link-container {
+  margin-top: 20px;
+}
+
+.link-container a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    margin: 10% 20px;
+    padding: 20px;
+  }
+
+  .login-title {
+    font-size: 1.5rem;
+  }
+
+  .form-input,
+  .submit-button {
+    font-size: 0.95rem;
+  }
+}
