@@ -24,7 +24,7 @@
 }
 
 .nav-link {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -32,9 +32,11 @@
 }
 
 .nav-link:hover {
-  color: #74b9ff;
+  color: #0dbb24;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .nav-link.active {
-  border-bottom: 2px solid #74b9ff;
+  border-bottom: 2px solid #105daa;
 }

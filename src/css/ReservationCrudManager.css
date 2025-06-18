@@ -1,4 +1,4 @@
-.crud-container {
+/* .crud-container {
   min-width: 800px;
   margin: auto;
   padding: 2rem;
@@ -11,6 +11,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2rem;
+  margin: 10px;
 }
 
 .form-group {
@@ -26,7 +27,7 @@
 }
 
 .crud-button {
-  padding: 0.5rem 1rem;
+  padding: 10px;
   border: none;
   border-radius: 4px;
   margin: 0.25rem;
@@ -61,4 +62,109 @@
 
 .crud-table th {
   background-color: #f2f2f2;
+} */
+
+.crud-container {
+  max-width: 1500px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.crud-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.crud-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 20px;
+  margin-bottom: 30px;
+}
+
+.crud-form label {
+  grid-column: 1 / 3;
+  font-weight: bold;
+  color: #333;
+}
+
+.crud-input,
+.crud-select {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.crud-button.submit {
+  grid-column: 1 / 3;
+  padding: 10px 15px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.crud-button.submit:hover {
+  background-color: #004c99;
+}
+
+.crud-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.crud-table th,
+.crud-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.crud-table th {
+  background-color: #e6e6e6;
+  font-weight: bold;
+}
+
+.crud-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.crud-button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.crud-button.edit {
+  background-color: #ffa500;
+  color: white;
+}
+
+.crud-button.delete {
+  background-color: #cc0000;
+  color: white;
+}
+
+.crud-button.edit:hover {
+  background-color: #e69500;
+}
+
+.crud-button.delete:hover {
+  background-color: #a30000;
 }

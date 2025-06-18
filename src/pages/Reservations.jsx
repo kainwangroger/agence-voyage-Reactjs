@@ -50,6 +50,7 @@ const Reservations = () => {
             name: "client",
             label: "Client",
             type: "select",
+            placeholder: "Choisir un client",
             options: clients.map((client) => ({
               value: client.id,
               label: `${client.nom} ${client.prenom}`,
@@ -59,6 +60,7 @@ const Reservations = () => {
             name: "voyage",
             label: "Voyage",
             type: "select",
+            placeholder: "Choisir un voyage",
             options: voyages.map((voyage) => ({
               value: voyage.id,
               label: `${voyage.destination} - ${voyage.dateDepart}`,
@@ -69,27 +71,32 @@ const Reservations = () => {
             label: "Type de Billet",
             type: "select",
             options: typeBilletOptions,
+            placeholder: "Choisir un type de billet",
           },
           {
             name: "dateReservation",
             label: "Date de Réservation",
             type: "date",
+            placeholder: "Entrez la date de réservation",
           },
           {
             name: "nombrePersonnes",
             label: "Nombre de Personnes",
             type: "number",
+            placeholder: "Entrez le nombre de personnes",
           },
           {
             name: "dateDepart",
             label: "Date de Départ",
             type: "date",
+            placeholder: "Entrez la date de départ",
           },
           {
             name: "statut",
             label: "Statut",
             type: "select",
             options: statusOptions,
+            placeholder: "Choisir un statut",
           },
         ]}
       />

@@ -39,12 +39,7 @@ const Clients = () => {
             required: true,
           },
           { name: "adresse", label: "Adresse", type: "text", required: true },
-          {
-            name: "dateNaissance",
-            label: "Date de naissance",
-            type: "date",
-            required: true,
-          },
+
           { name: "email", label: "Email", type: "email", required: true },
           { name: "telephone", label: "Téléphone", type: "text" },
           {

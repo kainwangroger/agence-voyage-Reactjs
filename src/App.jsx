@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Voyages from "./pages/Voyages";
+import Dashboard from "./pages/Dashboard";
 import Reservations from "./pages/Reservations";
 import Home from "./pages/Home";
 import Clients from "./pages/Clients";
@@ -27,6 +28,7 @@ function App() {
               <Route path="/voyages" element={<Voyages />} />
               <Route path="/reservations" element={<Reservations />} />
               <Route path="/type-billets" element={<TypeBillets />} />
+              <Route path="/dashboard" element={<Dashboard />} />
             </>
           )}
 

@@ -350,6 +350,9 @@ const ReservationCrudManager = ({ apiUrl, title, onUpdateSuccess }) => {
       <h2 className="crud-title">{title}</h2>
 
       <form onSubmit={handleSubmit} className="crud-form">
+        <label htmlFor="client">Client :</label>
+        {/* <label className="crud-label">{field.label} :</label> */}
+
         <select
           name="client"
           value={formData.client.id}
@@ -364,13 +367,14 @@ const ReservationCrudManager = ({ apiUrl, title, onUpdateSuccess }) => {
             </option>
           ))}
         </select>
-
+        <label htmlFor="voyage">Voyage :</label>
         <select
           name="voyage"
           value={formData.voyage.id}
           onChange={handleChange}
           required
           className="crud-select"
+          placeholder="Choisir un voyage"
         >
           <option value="">-- Choisir un voyage --</option>
           {voyages.map((v) => (
@@ -379,20 +383,21 @@ const ReservationCrudManager = ({ apiUrl, title, onUpdateSuccess }) => {
             </option>
           ))}
         </select>
-
+        <label htmlFor="typeBillet">Type de billet :</label>
         <select
           name="typeBillet"
           value={formData.typeBillet.id}
           onChange={handleChange}
           required
           className="crud-select"
+          placeholder="Choisir un type de billet"
         >
           <option value="">-- Type de billet --</option>
           <option value={1}>Standard</option>
           <option value={2}>Premium</option>
           <option value={3}>VIP</option>
         </select>
-
+        <label htmlFor="dateReservation">Date de réservation :</label>
         <input
           type="date"
           name="dateReservation"
@@ -400,8 +405,9 @@ const ReservationCrudManager = ({ apiUrl, title, onUpdateSuccess }) => {
           onChange={handleChange}
           required
           className="crud-input"
+          placeholder="Entrez la date de réservation"
         />
-
+        <label htmlFor="dateDepart">Date de départ :</label>
         <input
           type="date"
           name="dateDepart"
@@ -409,8 +415,9 @@ const ReservationCrudManager = ({ apiUrl, title, onUpdateSuccess }) => {
           onChange={handleChange}
           required
           className="crud-input"
+          placeholder="Entrez la date de départ"
         />
-
+        <label htmlFor="nombrePersonnes">Nombre de personnes :</label>
         <input
           type="number"
           name="nombrePersonnes"
@@ -419,21 +426,22 @@ const ReservationCrudManager = ({ apiUrl, title, onUpdateSuccess }) => {
           onChange={handleChange}
           required
           className="crud-input"
+          placeholder="Entrez le nombre de personnes"
         />
-
+        <label htmlFor="statut">Statut :</label>
         <select
           name="statut"
           value={formData.statut}
           onChange={handleChange}
           required
           className="crud-select"
+          placeholder="Choisir un statut"
         >
           <option value="">-- Statut --</option>
           <option value="Confirmé">Confirmé</option>
           <option value="En attente">En attente</option>
           <option value="Annulé">Annulé</option>
         </select>
-
         <button type="submit" disabled={loading} className="crud-button submit">
           {editingId ? "Mettre à jour" : "Ajouter"}
         </button>

@@ -38,6 +38,7 @@ const Voyages = () => {
       <CrudManager
         apiUrl="http://localhost:8080/api/voyages"
         title="Gestion des Voyages"
+        // user={{ role: "CLIENT" }} // ou { role: "admin" }
         fields={[
           {
             name: "villeDepart",

@@ -92,6 +92,7 @@ const CrudManager = ({
                   value={formData[field.name] || ""}
                   onChange={handleChange}
                   required={field.required}
+                  placeholder={`Entrez ${field.label.toLowerCase()}`}
                 />
               )}
             </div>
